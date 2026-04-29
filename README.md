@@ -121,7 +121,17 @@ cd backend
 dotnet restore
 dotnet run
 ```
+## 🧠 Development Approach
 
+This project was developed with the support of AI-assisted tools to enhance productivity and exploration of ideas.
+
+AI was used for:
+
+- Accelerating initial development
+- Exploring alternative implementations
+- Improving documentation quality
+
+All core decisions, architecture, and final implementations were carefully designed and validated to ensure correctness, maintainability, and performance.
 ---
 
 ## 🤝 Contact
