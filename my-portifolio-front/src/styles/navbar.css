@@ -1,0 +1,35 @@
+.navbar {
+    background: #131124;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-height: 25px;
+}
+
+.icon {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Gradiente no texto */
+    background: linear-gradient(90deg, #00ffcc, #00cc66);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menubar {
+    display: flex;
+    gap: 3rem;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+.menubar a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+}
