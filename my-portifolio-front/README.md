@@ -18,6 +18,6 @@ npm run dev
 - `npm run preview`: visualiza localmente a versão de produção.
 - `npm run lint`: executa o ESLint.
 
-## Conteúdo
+## Conteúdo e idiomas
 
-Edite os arquivos em `src/content/` para atualizar as informações do portfólio.
+Edite `src/content/pt-BR.json` e `src/content/en-US.json` para atualizar os textos em português brasileiro e inglês. Os dois arquivos seguem a mesma estrutura, tipada e consumida pelos componentes a partir de `src/content/index.ts`.

@@ -1,18 +1,16 @@
 import "../../styles/about.css";
 import { GraduationCap, Briefcase, MapPin } from "lucide-react";
-import { aboutContent, type Language } from "../../content/about";
+import type { portfolioContent } from "../../content";
 import profile from "../../assets/profile.jpeg";
 
 const icons = [GraduationCap, Briefcase, MapPin];
 
-export function About({ lang = "pt" }: { lang?: Language }) {
-  const content = aboutContent[lang];
-
+export function About({ content }: { content: typeof portfolioContent["pt-BR"]["about"] }) {
   return (
     <section id="about" className="about">
       <div className="about-container">
         <div className="about-image">
-          <img src={profile} alt="profile" />
+          <img src={profile} alt={content.profileAlt} />
         </div>
 
         <div className="about-text">

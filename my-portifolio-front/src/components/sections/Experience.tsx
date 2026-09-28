@@ -1,9 +1,8 @@
 import "../../styles/experience.css";
 import { Briefcase, Calendar } from "lucide-react";
-import { experienceContent, type ExperienceLanguage } from "../../content/experience";
+import type { portfolioContent } from "../../content";
 
-export function Experience({ lang = "pt" }: { lang?: ExperienceLanguage }) {
-  const content = experienceContent[lang];
+export function Experience({ content }: { content: typeof portfolioContent["pt-BR"]["experience"] }) {
   const items = content.jobs;
 
   return (

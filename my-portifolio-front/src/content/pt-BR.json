@@ -1,0 +1,67 @@
+{
+  "pageTitle": "Vinicius Stumpf | Portfólio",
+  "navbar": {
+    "links": [
+      { "label": "Início", "href": "#home" },
+      { "label": "Sobre", "href": "#about" },
+      { "label": "Experiência", "href": "#experience" },
+      { "label": "Projetos", "href": "#projects" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Contato", "href": "#contact" }
+    ],
+    "downloadCv": "Baixar CV",
+    "languageSwitch": {
+      "portuguese": "PT-BR",
+      "english": "EN",
+      "ariaLabel": "Mudar idioma para inglês"
+    }
+  },
+  "hero": {
+    "subtitle": "- Olá, eu sou",
+    "name": "Vinicius Stumpf",
+    "role": "Software Engineer",
+    "description": "Desenvolvedor de software com experiência em backend, focado em construir aplicações escaláveis, performáticas e bem estruturadas. Trabalho com .NET, APIs e bancos de dados, sempre buscando código limpo e soluções eficientes para problemas reais.",
+    "buttons": {
+      "projects": "Ver Projetos",
+      "contact": "Entrar em Contato"
+    },
+    "socialLinks": {
+      "github": "Perfil de Vinicius no GitHub",
+      "linkedin": "Perfil de Vinicius no LinkedIn",
+      "whatsapp": "Entrar em contato pelo WhatsApp"
+    }
+  },
+  "about": {
+    "title": "Sobre mim",
+    "profileAlt": "Foto de perfil de Vinicius Stumpf",
+    "description": "Engenheiro de software com experiência no desenvolvimento de aplicações web e APIs, com foco em back-end utilizando .NET. Atuo na construção de sistemas voltados à área de RH, desenvolvendo soluções escaláveis, bem estruturadas e com foco em performance. \n\n Tenho experiência com diferentes tecnologias e boas práticas de desenvolvimento, sempre priorizando código limpo e de fácil manutenção.\n\nTambém possuo interesse em sistemas embarcados e desenvolvimento de baixo nível, buscando expandir meu conhecimento para áreas que envolvem maior proximidade com hardware e aplicações críticas.",
+    "cards": [
+      {
+        "title": "Formação",
+        "description": "Ciencia da Computação\nESTACIO"
+      },
+      {
+        "title": "Experiência",
+        "description": "+4 anos\nDesenvolvendo soluções"
+      },
+      {
+        "title": "Localização",
+        "description": "Santa Catarina, Brasil\nDisponível para mudança"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiência",
+    "description": "Minha trajetória profissional em desenvolvimento de software",
+    "jobs": [
+      {
+        "id": 1,
+        "position": "Desenvolvedor Backend",
+        "company": "Havan",
+        "period": "2021 - Presente",
+        "description": "Líder técnico no desenvolvimento de APIs REST e microserviços utilizando .NET. Responsável pela arquitetura de sistemas escaláveis e mentoria de desenvolvedores juniores.",
+        "technologies": ["C#", ".NET 8", "SQL Server", "Docker", "Kubernetes"]
+      }
+    ]
+  }
+}

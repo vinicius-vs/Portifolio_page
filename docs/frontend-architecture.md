@@ -18,7 +18,7 @@ my-portifolio-front/
       ├── components/
       │    ├── sections/     # Portfolio sections
       │    └── ui/           # Reusable interface components
-      ├── content/           # Localized portfolio content
+      ├── content/           # pt-BR.json and en-US.json translations
       ├── pages/             # Page composition
       └── styles/            # CSS stylesheets
 ```
@@ -27,7 +27,9 @@ my-portifolio-front/
 
 * Keep components small and reusable
 * Keep presentation components separate from portfolio content
-* Store editable copy and experience data in `src/content/`
+* Store all editable interface copy and portfolio content in `src/content/pt-BR.json` and `src/content/en-US.json`
+* Keep both locale files in sync with the structure exposed by `src/content/index.ts`
+* Use the shared `Language` type (`pt-BR` or `en-US`) when handling the active locale
 * Use TypeScript for type safety
 * Keep the application frontend-only; content is bundled with the frontend
 

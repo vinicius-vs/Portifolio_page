@@ -1,0 +1,83 @@
+{
+  "pageTitle": "Vinicius Stumpf | Portfolio",
+  "navbar": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "downloadCv": "Download CV",
+    "languageSwitch": {
+      "portuguese": "PT-BR",
+      "english": "EN",
+      "ariaLabel": "Switch language to Portuguese"
+    }
+  },
+  "hero": {
+    "subtitle": "- Hi, I am",
+    "name": "Vinicius Stumpf",
+    "role": "Software Engineer",
+    "description": "Software engineer with backend experience, focused on building scalable, high-performance, and well-structured applications. I work with .NET, APIs, and databases, always aiming for clean code and efficient solutions to real-world problems.",
+    "buttons": {
+      "projects": "View Projects",
+      "contact": "Contact Me"
+    },
+    "socialLinks": {
+      "github": "Vinicius's GitHub profile",
+      "linkedin": "Vinicius's LinkedIn profile",
+      "whatsapp": "Contact via WhatsApp"
+    }
+  },
+  "about": {
+    "title": "About me",
+    "profileAlt": "Profile photo of Vinicius Stumpf",
+    "description": "I am a software engineer with experience in web development and APIs. I have a strong interest in embedded systems, low-level programming, and critical applications, aiming to work in the space sector in the future.",
+    "cards": [
+      {
+        "title": "Education",
+        "description": "Computer Science\nESTACIO"
+      },
+      {
+        "title": "Experience",
+        "description": "+4 years\nBuilding solutions"
+      },
+      {
+        "title": "Location",
+        "description": "Santa Catarina, Brazil\nOpen to relocation"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "My professional journey in software development",
+    "jobs": [
+      {
+        "id": 1,
+        "position": "Senior Backend Developer",
+        "company": "TechCorp Solutions",
+        "period": "2023 - Present",
+        "description": "Technical lead in REST APIs and microservices development using .NET. Responsible for scalable system architecture and junior developer mentoring.",
+        "technologies": ["C#", ".NET 8", "SQL Server", "Docker", "Kubernetes"]
+      },
+      {
+        "id": 2,
+        "position": "Full Stack Developer",
+        "company": "Innovate Tech",
+        "period": "2021 - 2023",
+        "description": "Full stack web application development with focus on backend. API implementation, performance optimization, and system integration.",
+        "technologies": ["C#", ".NET Core", "React", "PostgreSQL", "Azure"]
+      },
+      {
+        "id": 3,
+        "position": "Junior Developer",
+        "company": "StartUp Digital",
+        "period": "2020 - 2021",
+        "description": "First professional experience in development. Code maintenance, bug fixes, and simple feature implementation.",
+        "technologies": ["C#", "ASP.NET", "JavaScript", "MySQL"]
+      }
+    ]
+  }
+}

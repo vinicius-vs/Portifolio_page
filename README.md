@@ -46,4 +46,4 @@ my-portifolio-front/
     └── styles/             # Estilos CSS
 ```
 
-Para atualizar os textos e as experiências exibidas, edite os arquivos em `src/content/`.
+Para atualizar os textos e as experiências exibidas, edite `my-portifolio-front/src/content/pt-BR.json` ou `my-portifolio-front/src/content/en-US.json`.

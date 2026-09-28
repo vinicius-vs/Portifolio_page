@@ -1,19 +1,29 @@
+import { useEffect, useState } from "react";
 import { About } from "../components/sections/About";
 import { Hero } from "../components/sections/hero";
 import { Experience } from "../components/sections/Experience";
 import { Navbar } from "../components/ui/Navbar";
-
+import { portfolioContent, type Language } from "../content";
 
 export default function Home() {
+  const [language, setLanguage] = useState<Language>(() => {
+    const savedLanguage = window.localStorage.getItem("portfolio-language");
+    return savedLanguage === "en-US" ? "en-US" : "pt-BR";
+  });
+  const content = portfolioContent[language];
 
-  const language = "pt";
+  useEffect(() => {
+    window.localStorage.setItem("portfolio-language", language);
+    document.documentElement.lang = language;
+    document.title = content.pageTitle;
+  }, [content.pageTitle, language]);
+
   return (
     <div>
-      <Navbar lang={language} />
-      <Hero language={language} />
-      <About lang={language} />
-      <Experience lang={language} />
+      <Navbar lang={language} onLanguageChange={setLanguage} />
+      <Hero content={content.hero} />
+      <About content={content.about} />
+      <Experience content={content.experience} />
     </div>
-
-  )
+  );
 }
