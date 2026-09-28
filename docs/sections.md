@@ -1,47 +1,28 @@
 # Page Sections
 
+The home page currently renders the sections below. Keep section IDs in sync with the navigation links.
+
 ## Hero
 
 * Name
-* Title (Software Engineer)
+* Role
 * Short description
-* Call to action buttons
+* Call-to-action buttons
 
 ## About
 
 * Short introduction
-* Focus areas:
+* Education, experience, and location highlights
 
-  * Embedded systems
-  * Low-level programming
-  * System design
+## Experience
 
-## Skills
+* Position, company, and period
+* Description and technologies
+* Experience data is maintained in `src/content/experience.ts` for Portuguese and English.
 
-Group skills into:
+## Content and future sections
 
-* Backend
-* Frontend
-* Tools
-* Learning
-
-## Projects
-
-Each project should include:
-
-* Title
-* Description
-* Technologies
-* Link (GitHub or demo)
-
-## Contact
-
-* Email button (mailto)
-* WhatsApp link
-* Optional form (future backend integration)
-
-## Notes
-
-* Use `id` in each section for navigation
-* Keep sections visually separated
-* Avoid long texts
+* Content for the implemented sections is maintained in `src/content/`.
+* Skills, projects, and contact sections are not currently rendered; add them as frontend sections when implemented.
+* Do not imply that contact actions submit to a backend or that resume files are generated dynamically.
+* Use matching section IDs for any section exposed through the navbar.

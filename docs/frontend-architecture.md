@@ -2,34 +2,34 @@
 
 ## Stack
 
-* Next.js (App Router)
-* React
-* Tailwind CSS
+* React 18
 * TypeScript
+* Vite
+* CSS
+* Lucide React for icons
 
 ## Folder Structure
 
 ```
-src/
- ├── app/
- ├── components/
- │    ├── ui/
- │    ├── sections/
- │    └── layout/
- ├── services/
- ├── hooks/
- ├── types/
- ├── utils/
- └── styles/
+my-portifolio-front/
+ ├── public/                 # Public assets
+ └── src/
+      ├── assets/            # Images and imported assets
+      ├── components/
+      │    ├── sections/     # Portfolio sections
+      │    └── ui/           # Reusable interface components
+      ├── content/           # Localized portfolio content
+      ├── pages/             # Page composition
+      └── styles/            # CSS stylesheets
 ```
 
 ## Principles
 
 * Keep components small and reusable
-* Separate UI from logic
-* Use hooks for business logic
-* Centralize API calls in services
+* Keep presentation components separate from portfolio content
+* Store editable copy and experience data in `src/content/`
 * Use TypeScript for type safety
+* Keep the application frontend-only; content is bundled with the frontend
 
 ## Best Practices
 
@@ -37,3 +37,4 @@ src/
 * Use semantic naming
 * Reuse components
 * Keep code clean and readable
+* Do not add API clients or backend configuration for locally maintained content

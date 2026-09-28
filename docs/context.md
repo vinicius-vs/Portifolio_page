@@ -1,11 +1,12 @@
 # Global Context
 
-This project follows:
+This repository contains a frontend-only personal portfolio built with React, TypeScript, and Vite. It has no backend, REST API, database, or server-side content service.
 
-- frontend-architecture.md
-- navbar.md
-- sections.md
-- api-integration.md
-- backend-architecture.md
+Use these documents when working on the project:
 
-Always follow these guidelines when generating code.
+- `frontend-architecture.md` — stack, structure, and frontend conventions
+- `navbar.md` — navigation behavior and link requirements
+- `sections.md` — portfolio sections and content ownership
+- `project-guidelines.md` — scope and development standards
+
+Portfolio text and experience data are defined locally in `my-portifolio-front/src/content/`. Keep the implementation and documentation aligned; do not introduce backend or API assumptions.

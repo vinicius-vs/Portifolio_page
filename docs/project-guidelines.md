@@ -2,20 +2,21 @@
 
 ## Goal
 
-Build a full-stack portfolio platform demonstrating:
+Build a clear, responsive personal portfolio as a frontend-only application using:
 
-* Frontend (React / Next.js)
-* Backend (.NET)
-* API integration
-* Clean architecture
+* React
+* TypeScript
+* Vite
+* CSS
 
 ## Features
 
-* Portfolio website
-* Contact system
-* PDF resume generation
-* WhatsApp redirect
-* Email integration
+* Personal introduction
+* About section
+* Professional experience
+* Portfolio navigation
+
+Keep content local to the frontend. This project does not include a backend, API, database, contact form submission service, or dynamic PDF generation.
 
 ## Coding Standards
 
@@ -29,12 +30,11 @@ Build a full-stack portfolio platform demonstrating:
 * Overengineering
 * Large components
 * Mixed responsibilities
-* Hardcoded API calls everywhere
+* Unnecessary server/API infrastructure
 
 ## What Makes This Project Strong
 
-* Real backend usage
-* Structured frontend
+* Clear frontend structure
 * Professional UI
 * Clear documentation
 
@@ -43,5 +43,5 @@ Build a full-stack portfolio platform demonstrating:
 A portfolio that can be used to:
 
 * Apply for jobs in Europe
-* Demonstrate engineering skills
+* Demonstrate frontend development skills
 * Show long-term career direction

@@ -3,28 +3,23 @@
 ## Requirements
 
 * Fixed at the top
-* Smooth scrolling
-* Highlight active section
-* Responsive (future improvement)
+* Provide anchor links to portfolio sections
+* Keep navigation content in `src/content/navbar.ts`
 
 ## Sections
 
-* about
-* skills
-* projects
-* contact
+The current navigation configuration includes `home`, `about`, `experience`, `projects`, `skills`, and `contact` anchors. Ensure every link points to a section that is actually rendered; remove or add links as sections change.
 
 ## Behavior
 
-* Scroll to section on click
-* Detect current section on scroll
-* Highlight active link
+* Clicking a link navigates to its anchor.
+* The `Download CV` button is a frontend UI action; do not describe it as dynamic PDF generation.
 
 ## Implementation Notes
 
-* Use `useEffect` to listen to scroll
-* Use `window.scrollY` to detect position
-* Apply `scroll-behavior: smooth` in global CSS
+* Navigation labels and anchor targets are defined in `src/content/navbar.ts`.
+* Keep anchor IDs on page sections synchronized with the configured links.
+* Add scroll tracking or active-link behavior only when it is implemented and needed.
 
 ## Styling
 
@@ -35,6 +30,6 @@
 ## Example Features
 
 * Sticky navigation
-* Active link state
 * Hover effects
 * Download CV button
+* Responsive layout when supported by the implementation
