@@ -1,0 +1,200 @@
+/* CONTAINER */
+.experience {
+  padding: 80px 24px;
+  background-color: #01050e;
+}
+
+.experience-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.experience-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.experience-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #10b981;
+  margin-bottom: 12px;
+}
+
+.experience-header p {
+  color: #cbd5f5;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* TIMELINE */
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ITEM */
+.experience-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+/* TIMELINE DOT */
+.experience-timeline-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(16, 185, 129, 0.1);
+  border: 2px solid #10b981;
+  color: #10b981;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* LINE BETWEEN ITEMS */
+.experience-line {
+  position: absolute;
+  left: 23px;
+  top: 48px;
+  width: 2px;
+  height: calc(100% + 40px);
+  background-color: rgba(16, 185, 129, 0.2);
+  z-index: 0;
+}
+
+/* CONTENT */
+.experience-content {
+  padding: 20px;
+  background-color: rgba(16, 185, 129, 0.05);
+  border-left: 2px solid #10b981;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.experience-item:hover .experience-content {
+  background-color: rgba(16, 185, 129, 0.1);
+  transform: translateX(5px);
+}
+
+/* HEADER INFO */
+.experience-header-info {
+  margin-bottom: 12px;
+}
+
+.experience-header-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 4px 0;
+}
+
+.experience-company {
+  display: inline-block;
+  color: #10b981;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* PERIOD */
+.experience-period {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.experience-period svg {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+/* DESCRIPTION */
+.experience-description {
+  color: #cbd5f5;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* TECHNOLOGIES */
+.experience-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 20px;
+  color: #10b981;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  background-color: rgba(16, 185, 129, 0.25);
+  border-color: #10b981;
+}
+
+/* LOADING STATE */
+.experience-loading {
+  text-align: center;
+  color: #cbd5f5;
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .experience {
+    padding: 60px 16px;
+  }
+
+  .experience-header h2 {
+    font-size: 24px;
+  }
+
+  .experience-item {
+    gap: 16px;
+    padding-bottom: 32px;
+  }
+
+  .experience-timeline-dot {
+    width: 40px;
+    height: 40px;
+  }
+
+  .experience-line {
+    left: 19px;
+  }
+
+  .experience-content {
+    padding: 16px;
+  }
+
+  .experience-header-info h3 {
+    font-size: 16px;
+  }
+
+  .experience-description {
+    font-size: 13px;
+  }
+
+  .tech-tag {
+    font-size: 11px;
+  }
+}

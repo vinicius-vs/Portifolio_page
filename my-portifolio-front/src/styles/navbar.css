@@ -1,11 +1,12 @@
 .navbar {
-    background: #131124;
+    background: #000000;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     max-height: 25px;
+    border-bottom: 1px solid #171620;
 }
 
 .icon {

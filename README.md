@@ -1,155 +1,49 @@
-# 🚀 Interactive Resume Platform
+# Portfólio — Vinicius Stumpf
 
-A full-stack portfolio and resume platform built to demonstrate modern software engineering practices, combining a clean frontend with a structured backend architecture.
+Portfólio pessoal desenvolvido como uma aplicação **frontend**, com informações sobre minha trajetória, experiência e projetos. O conteúdo é mantido no próprio projeto, sem API ou servidor backend.
 
----
+## Tecnologias
 
-## 📌 Overview
+- React 18
+- TypeScript
+- Vite
+- CSS
+- Lucide React
 
-This project is an interactive personal portfolio that goes beyond a static website.
+## Executar localmente
 
-It includes:
-
-* A modern frontend built with Next.js
-* A REST API built with .NET
-* Dynamic PDF resume generation
-
-The goal is to showcase real-world engineering skills and system design thinking.
-
----
-
-## 🧠 Motivation
-
-Instead of building a simple portfolio, this project was designed as a **production-like system** to demonstrate:
-
-* Clean architecture
-* API design
-* Frontend/backend integration
-* Scalable and maintainable code
-
-It also reflects my long-term goal of working with **high-performance and mission-critical systems**, especially in embedded and space-related domains.
-
----
-
-## 🧱 Architecture
-
-### Frontend
-
-* Next.js
-* React
-* Tailwind CSS
-* TypeScript
-
-### Backend
-
-* .NET (ASP.NET Core)
-
-### Architecture Style
-
-* Clean Architecture (simplified)
-* Separation of concerns
-* Service-based design
-
----
-
-## ⚙️ Features
-
-### 🟢 Portfolio
-
-* About, skills, and experience sections
-* Highlighted projects
-
-### 🟢 Contact System
-
-* Form submission via API
-
-### 🟢 Resume (PDF)
-
-* Dynamic PDF generation
-* Downloadable CV
-
-### 🟢 Navigation
-
-* Smooth scrolling
-* Fixed responsive navbar
-
----
-
-## 🔌 API Endpoints
-
-```http
-POST   /api/contact
-GET    /api/projects
-GET    /api/resume/pdf
-```
-
----
-
-## 📁 Project Structure
-
-```txt
-frontend/
-backend/
-docs/
-```
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-* Node.js
-* .NET SDK
-
----
-
-### Run Frontend
+Requisitos: Node.js e npm.
 
 ```bash
-cd frontend
+cd my-portifolio-front
 npm install
 npm run dev
 ```
 
----
+O Vite exibirá no terminal o endereço local para abrir no navegador.
 
-### Run Backend
+## Scripts
 
-```bash
-cd backend
-dotnet restore
-dotnet run
+Execute os comandos a partir de `my-portifolio-front/`:
+
+| Comando | Descrição |
+| --- | --- |
+| `npm run dev` | Inicia o servidor de desenvolvimento |
+| `npm run build` | Verifica os tipos e gera a versão de produção em `dist/` |
+| `npm run preview` | Serve localmente a versão de produção |
+| `npm run lint` | Executa o ESLint |
+
+## Estrutura
+
+```text
+my-portifolio-front/
+├── public/                 # Arquivos públicos e ícones
+└── src/
+    ├── assets/             # Imagens e outros recursos
+    ├── components/         # Componentes de interface e seções
+    ├── content/            # Textos e experiências do portfólio
+    ├── pages/              # Páginas
+    └── styles/             # Estilos CSS
 ```
-## 🧠 Development Approach
 
-This project was developed with the support of AI-assisted tools to enhance productivity and exploration of ideas.
-
-AI was used for:
-
-- Accelerating initial development
-- Exploring alternative implementations
-- Improving documentation quality
-
-All core decisions, architecture, and final implementations were carefully designed and validated to ensure correctness, maintainability, and performance.
----
-
-## 🤝 Contact
-
-* GitHub: https://github.com/vinicius-vs
-* LinkedIn: 
-* Email: viniciusstumpf000@gmail.com
-
----
-
-## 📝 Notes
-
-This project is actively evolving as part of my continuous learning journey in software engineering.
-
----
-
-## ⭐ Key Takeaway
-
-This is not just a portfolio.
-
-It is a demonstration of how I design, structure, and build software systems.
+Para atualizar os textos e as experiências exibidas, edite os arquivos em `src/content/`.

@@ -1,5 +1,5 @@
   body {
-    background: #0a0a0a;
+    background: #000000;
     margin: 0;
     padding: 0;
   }
@@ -8,8 +8,7 @@
     color: rgba(34, 197, 94, 0.4);
   }
 
-.btn-primary
-{
+  .btn-primary {
     display: inline-flex;
     align-items: center;
     border: 1px solid #2ecc71;
@@ -23,8 +22,9 @@
   .btn-primary:hover {
     background-color: #000;
     color: #2ecc71;
-}
-  .btn-secondary{
+  }
+
+  .btn-secondary {
     display: inline-flex;
     align-items: center;
     border: 1px solid #2ecc71;
@@ -39,18 +39,18 @@
     background-color: #2ecc71;
     color: #000;
   }
-  .btn-sm
-  {
+
+  .btn-sm {
     gap: 4px;
     padding: 8px 16px;
   }
-  
-  .btn-md{
+
+  .btn-md {
     gap: 8px;
     padding: 12px 20px;
   }
 
-  .btn-lg{
+  .btn-lg {
     gap: 12px;
     padding: 16px 24px;
   }
@@ -58,4 +58,4 @@
   .icon-btn {
     display: flex;
     align-items: center;
-}
+  }

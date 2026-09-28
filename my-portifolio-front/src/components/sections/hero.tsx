@@ -1,54 +1,56 @@
+import { heroContent } from '../../content/hero';
 import '../../styles/globals.css'
 import '../../styles/hero.css'
-import { LucideFolderGit, LinkIcon, Mail, MessageCircle } from "lucide-react";
 import { Button } from '../ui/Button';
+import { FaGithub, FaLinkedin ,FaWhatsapp} from "react-icons/fa";
 
-export function Hero() {
+export function Hero({language = "pt"}) {
+
+    const lang = language === "en" ? "en" : "pt";
+
+    const content = heroContent[lang];
+
     return (
         <section className="hero">
             <div className="hero-content">
-                <p className="hero-subtitle">- Olá, eu sou</p>
+                <p className="hero-subtitle">{content.subtitle}</p>
+                <h1 className="hero-title">{content.name}</h1>
 
-                <h1 className="hero-title">Vinicius Stumpf</h1>
-
-                <h2 className="hero-role">Software Engineer</h2>
+                <h2 className="hero-role">{content.role}</h2>
 
                 <p className="hero-description">
-                    Desenvolvedor de software apaixonado por criar soluções escaláveis e eficientes...
+                    {content.description}
                 </p>
 
                 <div className="hero-buttons">
-                    <Button variant="primary">Ver Projetos</Button>
-                    <Button variant="secondary">Entrar em Contato</Button>
+                    <Button variant="primary">{content.buttons.projects}</Button>
+                    <Button variant="secondary">{content.buttons.contact}</Button>
                 </div>
 
                 <div className="hero-socials">
                     <a
-                        href="https://github.com/seu-usuario"
+                        href="https://github.com/vinicius-vs"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <LucideFolderGit size={22} />
+                        <FaGithub size={22} />
                     </a>
 
                     <a
-                        href="https://linkedin.com/in/seu-usuario"
+                        href="https://linkedin.com/in/vinicius-stumpf"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <LinkIcon size={22} />
-                    </a>
-
-                    <a href="mailto:seuemail@email.com">
-                        <Mail size={22} />
+                   
+                       <FaLinkedin size={22} />
                     </a>
 
                     <a
-                        href="https://wa.me/5599999999999"
+                        href="https://wa.me/5547997199275"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <MessageCircle size={22} />
+                        <FaWhatsapp size={22} />
                     </a>
                 </div>
             </div>

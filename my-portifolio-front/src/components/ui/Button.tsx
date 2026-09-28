@@ -1,25 +1,36 @@
+import type { LucideIcon } from "lucide-react";
 
+type ButtonVariant = "primary" | "secondary";
+type ButtonSize = "sm" | "md" | "lg";
 
-export function Button({ onClick=() => {}, 
-                         children="", 
-                         variant="primary",
-                         size="md",
-                         icon:Icon=undefined}) {
-
-  const variants = {
+export function Button({
+  onClick = () => {},
+  children = "",
+  variant = "primary",
+  size = "md",
+  icon: Icon,
+}: {
+  onClick?: () => void;
+  children?: React.ReactNode;
+  variant?: ButtonVariant;
+  size?: ButtonSize;
+  icon?: LucideIcon;
+}) {
+  const variants: Record<ButtonVariant, string> = {
     primary: "btn-primary",
-    secondary: "btn-secondary"
-  } 
-  const sizes = {
+    secondary: "btn-secondary",
+  };
+
+  const sizes: Record<ButtonSize, string> = {
     sm: "btn-sm",
     md: "btn-md",
-    lg: "btn-lg"
-  }
+    lg: "btn-lg",
+  };
 
-  console.log(Icon);
-  return <button className={`${variants[variant]} ${sizes[size]}`} 
-                 onClick={onClick}>
-                 {Icon && <Icon size={18} className="icon-btn" />}
-                 {children}
-          </button>
+  return (
+    <button className={`${variants[variant]} ${sizes[size]}`} onClick={onClick}>
+      {Icon && <Icon size={18} className="icon-btn" />}
+      {children}
+    </button>
+  );
 }
