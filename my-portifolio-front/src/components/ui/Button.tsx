@@ -10,6 +10,7 @@ export function Button({
   size = "md",
   icon: Icon,
   className = "",
+  href,
 }: {
   onClick?: () => void;
   children?: React.ReactNode;
@@ -17,6 +18,7 @@ export function Button({
   size?: ButtonSize;
   icon?: LucideIcon;
   className?: string;
+  href?: string;
 }) {
   const variants: Record<ButtonVariant, string> = {
     primary: "btn-primary",
@@ -29,10 +31,21 @@ export function Button({
     lg: "btn-lg",
   };
 
-  return (
-    <button className={`${variants[variant]} ${sizes[size]} ${className}`.trim()} onClick={onClick}>
+  const classes = `${variants[variant]} ${sizes[size]} ${className}`.trim();
+  const content = (
+    <>
       {Icon && <Icon size={18} className="icon-btn" />}
       {children}
+    </>
+  );
+
+  return href ? (
+    <a className={classes} href={href}>
+      {content}
+    </a>
+  ) : (
+    <button className={classes} onClick={onClick}>
+      {content}
     </button>
   );
 }

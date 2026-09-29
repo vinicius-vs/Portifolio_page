@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { About } from "../components/sections/About";
 import { Hero } from "../components/sections/hero";
 import { Experience } from "../components/sections/Experience";
+import { Projects } from "../components/sections/Projects";
 import { Navbar } from "../components/ui/Navbar";
 import { portfolioContent, type Language } from "../content";
 
@@ -24,6 +25,7 @@ export default function Home() {
       <Hero content={content.hero} />
       <About content={content.about} />
       <Experience content={content.experience} />
+      <Projects content={content.projects} />
     </div>
   );
 }

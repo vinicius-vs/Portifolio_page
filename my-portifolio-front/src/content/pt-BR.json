@@ -59,8 +59,59 @@
         "position": "Desenvolvedor Backend",
         "company": "Havan",
         "period": "2021 - Presente",
-        "description": "Líder técnico no desenvolvimento de APIs REST e microserviços utilizando .NET. Responsável pela arquitetura de sistemas escaláveis e mentoria de desenvolvedores juniores.",
-        "technologies": ["C#", ".NET 8", "SQL Server", "Docker", "Kubernetes"]
+        "description": "Desenvolvimento, manutenção e evolução de APIs e sistemas para a área de Recursos Humanos utilizando .NET e C#. Atuação em novas funcionalidades, correção de bugs e sistemas legados. Como suplente de Tech Lead, apoio o time em decisões técnicas e acompanhamento das demandas.",
+        "technologies": ["C#", ".NET","Java", "SQL Server", "PostgreSQL","React","Git"]
+      }
+    ]
+  },
+  "projects": {
+    "titlePrefix": "Projetos",
+    "titleAccent": "GitHub",
+    "description": "Uma seleção de projetos pessoais e experimentos com diferentes tecnologias.",
+    "filtersLabel": "Filtrar projetos por tecnologia",
+    "filters": [
+      { "id": "all", "label": "Todos" },
+      { "id": "dotnet", "label": ".NET" },
+      { "id": "web", "label": "Web" },
+      { "id": "desktop", "label": "Desktop" },
+      { "id": "tools", "label": "Ferramentas" }
+    ],
+    "technologiesLabel": "Tecnologias utilizadas",
+    "detailsLabel": "Sobre o projeto",
+    "repositoryLabel": "Ver no GitHub",
+    "openProjectLabel": "Abrir projeto no GitHub",
+    "closeModalLabel": "Fechar detalhes do projeto",
+    "items": [
+      {
+        "id": "geracao-boletos",
+        "preview": "api",
+        "previewTitle": "Boleto",
+        "filters": ["dotnet", "web", "tools"],
+        "category": "API",
+        "title": "API de geração de boletos",
+        "description": "API REST para geração de boletos, desenvolvida com ASP.NET Core. O projeto explora design de APIs, injeção de dependência e implantação em containers com Docker.",
+        "details": [
+          "API organizada em controllers para expor as operações de geração de boletos.",
+          "Estrutura em camadas com separação entre endpoints, modelos e repositórios.",
+          "Configuração Docker para empacotar e executar a aplicação em container."
+        ],
+        "technologies": ["C#", "ASP.NET Core", ".NET 6", "Docker"],
+        "repository": "https://github.com/vinicius-vs/Trabalho-De-Engenharia-de-Software-Arquitetura-Servless"
+      },
+      {
+        "id": "portfolio",
+        "preview": "web",
+        "filters": ["web", "tools"],
+        "category": "Web",
+        "title": "Portfólio de desenvolvedor",
+        "description": "Portfólio pessoal criado para apresentar minha experiência profissional, projetos e conhecimentos técnicos. Desenvolvido em React com conteúdo multilíngue.",
+        "details": [
+          "Interface construída com React e TypeScript, com estilos responsivos em CSS.",
+          "Conteúdo em português e inglês, com troca de idioma durante a navegação.",
+          "Seções para apresentar experiência, projetos e informações profissionais."
+        ],
+        "technologies": ["React", "TypeScript", "Vite"],
+        "repository": "https://github.com/vinicius-vs/Portifolio_page"
       }
     ]
   }

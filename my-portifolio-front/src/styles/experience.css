@@ -1,6 +1,6 @@
 /* CONTAINER */
 .experience {
-  padding: 80px 24px;
+  padding: 80px 24px 40px;
   background-color: #01050e;
 }
 
@@ -161,7 +161,7 @@
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .experience {
-    padding: 60px 16px;
+    padding: 60px 16px 32px;
   }
 
   .experience-header h2 {

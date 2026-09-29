@@ -18,7 +18,7 @@ export function Hero({ content }: { content: typeof portfolioContent["pt-BR"]["h
                 </p>
 
                 <div className="hero-buttons">
-                    <Button variant="primary">{content.buttons.projects}</Button>
+                    <Button variant="primary" href="#projects">{content.buttons.projects}</Button>
                     <Button variant="secondary">{content.buttons.contact}</Button>
                 </div>
 
