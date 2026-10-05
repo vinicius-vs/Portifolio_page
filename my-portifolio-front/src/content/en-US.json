@@ -114,5 +114,35 @@
         "repository": "https://github.com/vinicius-vs/Portifolio_page"
       }
     ]
+  },
+  "skills": {
+    "eyebrow": "Expertise",
+    "titlePrefix": "Skills &",
+    "titleAccent": "Technologies",
+    "description": "Tools and technologies I use to build applications and solve problems.",
+    "featuredLabel": "Main focus",
+    "featuredDescription": "Back-end development and API engineering.",
+    "categories": [
+      {
+        "id": "backend",
+        "title": "Back-end",
+        "items": ["C#", ".NET", "ASP.NET Core", "Java", "REST APIs"]
+      },
+      {
+        "id": "frontend",
+        "title": "Front-end",
+        "items": ["React", "TypeScript", "JavaScript", "HTML", "CSS"]
+      },
+      {
+        "id": "databases",
+        "title": "Databases",
+        "items": ["SQL Server", "PostgreSQL", "SQL"]
+      },
+      {
+        "id": "tools",
+        "title": "Tools",
+        "items": ["Git", "Docker", "Vite"]
+      }
+    ]
   }
 }
