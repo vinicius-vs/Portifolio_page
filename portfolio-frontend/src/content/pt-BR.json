@@ -20,7 +20,7 @@
     "subtitle": "- Olá, eu sou",
     "name": "Vinicius Stumpf",
     "role": "Desenvolvedor Back-end .NET",
-    "description": "Desenvolvedor back-end com 5 anos de experiência no ecossistema .NET, atuando na evolução de sistemas de Recursos Humanos, desenvolvimento de APIs e manutenção de aplicações legadas. Experiência na implementação de novas funcionalidades e suporte técnico à equipe.",
+    "description": "Atuo no desenvolvimento e na evolução de sistemas corporativos, trabalhando com APIs, integrações e código legado. Meu foco é entender os problemas, encontrar soluções bem estruturadas e construir software que possa evoluir com o tempo.",
     "buttons": {
       "projects": "Ver Projetos",
       "contact": "Entrar em Contato"
@@ -57,9 +57,9 @@
       {
         "id": 1,
         "position": "Desenvolvedor Back-end",
-        "company": "Havan | Havan RH",
+        "company": "Havan | Havan Labs",
         "period": "2021 - Atual",
-        "description": "Desenvolvimento e manutenção de sistemas de Recursos Humanos, incluindo Gestão de Escalas, usando .NET e C#. Implementação de novas funcionalidades, manutenção evolutiva, correção de bugs e suporte a sistemas legados. Como suplente de tech lead, apoio decisões técnicas e o acompanhamento das demandas.",
+        "description": "Desenvolvimento e evolução de sistemas de Recursos Humanos utilizando .NET e C#. Atuação na implementação de novas funcionalidades, correção de bugs e manutenção de sistemas legados. Como suplente de tech lead, apoio decisões técnicas, a organização das demandas e o acompanhamento das atividades da equipe.",
         "technologies": [".NET", "C#", "ASP.NET Core", "Entity Framework Core", "SQL Server", "PostgreSQL", "React"]
       }
     ]
@@ -73,8 +73,7 @@
       { "id": "all", "label": "Todos" },
       { "id": "dotnet", "label": ".NET" },
       { "id": "web", "label": "Web" },
-      { "id": "desktop", "label": "Desktop" },
-      { "id": "tools", "label": "Ferramentas" }
+      { "id": "desktop", "label": "Desktop" }
     ],
     "technologiesLabel": "Tecnologias utilizadas",
     "detailsLabel": "Sobre o projeto",
@@ -83,25 +82,9 @@
     "closeModalLabel": "Fechar detalhes do projeto",
     "items": [
       {
-        "id": "geracao-boletos",
-        "preview": "api",
-        "previewTitle": "Boleto",
-        "filters": ["dotnet", "web", "tools"],
-        "category": "API",
-        "title": "API de geração de boletos",
-        "description": "API REST para geração de boletos, desenvolvida com ASP.NET Core. O projeto explora design de APIs, injeção de dependência e implantação em containers com Docker.",
-        "details": [
-          "API organizada em controllers para expor as operações de geração de boletos.",
-          "Estrutura em camadas com separação entre endpoints, modelos e repositórios.",
-          "Configuração Docker para empacotar e executar a aplicação em container."
-        ],
-        "technologies": ["C#", "ASP.NET Core", ".NET 6", "Docker"],
-        "repository": "https://github.com/vinicius-vs/Trabalho-De-Engenharia-de-Software-Arquitetura-Servless"
-      },
-      {
         "id": "portfolio",
         "preview": "web",
-        "filters": ["web", "tools"],
+        "filters": ["web"],
         "category": "Web",
         "title": "Portfólio de desenvolvedor",
         "description": "Portfólio pessoal criado para apresentar minha experiência profissional, projetos e conhecimentos técnicos. Desenvolvido em React com conteúdo multilíngue.",
@@ -141,12 +124,12 @@
       {
         "id": "architecture",
         "title": "Arquitetura e práticas",
-        "items": ["Clean Architecture", "DDD", "Desenvolvimento orientado a especificações"]
+      "items": ["Clean Architecture", "DDD"]
       },
       {
         "id": "tools",
         "title": "Ferramentas e tecnologias adicionais",
-        "items": ["Git", "Docker", "Java (contato profissional)", "Python (contato profissional)"]
+        "items": ["Git", "Docker", "Java (contato profissional)", "Python (contato profissional)","Jenkins"]
       }
     ]
   },
