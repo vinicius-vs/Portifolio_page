@@ -13,7 +13,9 @@ import "../../styles/projects.css";
 import type { portfolioContent } from "../../content";
 
 type ProjectsContent = typeof portfolioContent["pt-BR"]["projects"];
-type Project = ProjectsContent["items"][number];
+type Project = Omit<ProjectsContent["items"][number], "previewTitle"> & {
+  previewTitle?: string;
+};
 
 function ProjectPreview({ project }: { project: Project }) {
   if (project.preview === "desktop") {
@@ -116,7 +118,7 @@ function ProjectPreview({ project }: { project: Project }) {
       </div>
       <div className="api-document">
         <small>API RESPONSE</small>
-        <strong>{project.previewTitle}</strong>
+        <strong>{project.previewTitle ?? project.title}</strong>
         <div className="api-barcode" />
         <i />
         <i />

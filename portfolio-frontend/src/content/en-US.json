@@ -20,7 +20,7 @@
     "subtitle": "- Hi, I am",
     "name": "Vinicius Stumpf",
     "role": "Back-end Developer | .NET and C#",
-    "description": "Back-end developer with 5 years of experience in the .NET ecosystem, contributing to the evolution of Human Resources systems, API development, and maintenance of legacy applications. Experienced in implementing new features and providing technical support to the team.",
+    "description": "I work on the development and evolution of enterprise systems, working with APIs, integrations, and legacy code. I focus on understanding problems, finding well-structured solutions, and building software that can evolve over time.",
     "buttons": {
       "projects": "View Projects",
       "contact": "Contact Me"
@@ -73,8 +73,7 @@
       { "id": "all", "label": "All" },
       { "id": "dotnet", "label": ".NET" },
       { "id": "web", "label": "Web" },
-      { "id": "desktop", "label": "Desktop" },
-      { "id": "tools", "label": "Tools" }
+      { "id": "desktop", "label": "Desktop" }
     ],
     "technologiesLabel": "Technologies used",
     "detailsLabel": "About this project",
@@ -83,25 +82,9 @@
     "closeModalLabel": "Close project details",
     "items": [
       {
-        "id": "geracao-boletos",
-        "preview": "api",
-        "previewTitle": "Boleto",
-        "filters": ["dotnet", "web", "tools"],
-        "category": "API",
-        "title": "Payment slip generation API",
-        "description": "A REST API for generating Brazilian payment slips (boletos), built with ASP.NET Core. The project explores API design, dependency injection, and containerized deployment using Docker.",
-        "details": [
-          "Controller-based API exposing payment slip generation operations.",
-          "Layered structure separating endpoints, models, and repositories.",
-          "Docker configuration for packaging and running the application in a container."
-        ],
-        "technologies": ["C#", "ASP.NET Core", ".NET 6", "Docker"],
-        "repository": "https://github.com/vinicius-vs/Trabalho-De-Engenharia-de-Software-Arquitetura-Servless"
-      },
-      {
         "id": "portfolio",
         "preview": "web",
-        "filters": ["web", "tools"],
+        "filters": ["web"],
         "category": "Web",
         "title": "Developer portfolio",
         "description": "A personal portfolio built to showcase my professional experience, projects, and technical background. Developed with React and multilingual content.",
@@ -141,12 +124,12 @@
       {
         "id": "architecture",
         "title": "Architecture and practices",
-        "items": ["Clean Architecture", "DDD", "Specification-driven development"]
+        "items": ["Clean Architecture", "DDD"]
       },
       {
         "id": "tools",
         "title": "Tools and additional technologies",
-        "items": ["Git", "Docker", "Java (professional exposure)", "Python (professional exposure)"]
+        "items": ["Git", "Docker", "Java (professional exposure)", "Python (professional exposure)", "Jenkins"]
       }
     ]
   },
