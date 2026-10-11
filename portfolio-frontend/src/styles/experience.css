@@ -1,25 +1,29 @@
 /* CONTAINER */
 .experience {
-  padding: 80px 24px 40px;
-  background-color: #01050e;
+  padding: 72px 24px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(16, 185, 129, 0.055), transparent 48%),
+    #01050e;
 }
 
 .experience-container {
-  max-width: 900px;
+  width: min(100%, 1050px);
   margin: 0 auto;
 }
 
 /* HEADER */
 .experience-header {
-  margin-bottom: 60px;
+  margin: 0 auto 34px;
+  max-width: 620px;
   text-align: center;
 }
 
 .experience-header h2 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #10b981;
-  margin-bottom: 12px;
+  margin: 0 0 14px;
+  color: #f8fafc;
+  font-size: clamp(32px, 5vw, 46px);
+  font-weight: 750;
+  letter-spacing: -0.035em;
 }
 
 .experience-header p {
@@ -161,11 +165,11 @@
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .experience {
-    padding: 60px 16px 32px;
+    padding: 48px 16px;
   }
 
   .experience-header h2 {
-    font-size: 24px;
+    font-size: clamp(30px, 8vw, 38px);
   }
 
   .experience-item {

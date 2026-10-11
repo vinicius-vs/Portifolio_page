@@ -19,7 +19,7 @@ export function Hero({ content }: { content: typeof portfolioContent["pt-BR"]["h
 
                 <div className="hero-buttons">
                     <Button variant="primary" href="#projects">{content.buttons.projects}</Button>
-                    <Button variant="secondary">{content.buttons.contact}</Button>
+                    <Button variant="secondary" href="#contact">{content.buttons.contact}</Button>
                 </div>
 
                 <div className="hero-socials">
@@ -33,7 +33,7 @@ export function Hero({ content }: { content: typeof portfolioContent["pt-BR"]["h
                     </a>
 
                     <a
-                        href="https://linkedin.com/in/vinicius-stumpf"
+                        href="https://www.linkedin.com/in/vinicius-stumpf-b91a661ab/"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={content.socialLinks.linkedin}

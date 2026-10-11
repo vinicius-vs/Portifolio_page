@@ -15,7 +15,7 @@ Portfólio pessoal desenvolvido como uma aplicação **frontend**, com informaç
 Requisitos: Node.js e npm.
 
 ```bash
-cd my-portifolio-front
+cd portfolio-frontend
 npm install
 npm run dev
 ```
@@ -24,7 +24,7 @@ O Vite exibirá no terminal o endereço local para abrir no navegador.
 
 ## Scripts
 
-Execute os comandos a partir de `my-portifolio-front/`:
+Execute os comandos a partir de `portfolio-frontend/`:
 
 | Comando | Descrição |
 | --- | --- |
@@ -36,7 +36,7 @@ Execute os comandos a partir de `my-portifolio-front/`:
 ## Estrutura
 
 ```text
-my-portifolio-front/
+portfolio-frontend/
 ├── public/                 # Arquivos públicos e ícones
 └── src/
     ├── assets/             # Imagens e outros recursos
@@ -46,4 +46,4 @@ my-portifolio-front/
     └── styles/             # Estilos CSS
 ```
 
-Para atualizar os textos e as experiências exibidas, edite `my-portifolio-front/src/content/pt-BR.json` ou `my-portifolio-front/src/content/en-US.json`.
+Para atualizar os textos e as experiências exibidas, edite `portfolio-frontend/src/content/pt-BR.json` ou `portfolio-frontend/src/content/en-US.json`.

@@ -11,7 +11,7 @@
 ## Folder Structure
 
 ```
-my-portifolio-front/
+portfolio-frontend/
  ├── public/                 # Public assets
  └── src/
       ├── assets/            # Images and imported assets

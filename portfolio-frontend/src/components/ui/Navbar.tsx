@@ -4,6 +4,7 @@ import '../../styles/globals.css';
 import '../../styles/navbar.css';
 import { Button } from './Button';
 import { Download } from 'lucide-react';
+import { downloadResume } from '../../utils/downloadResume';
 
 export function Navbar({
   lang,
@@ -13,6 +14,7 @@ export function Navbar({
   onLanguageChange: (language: Language) => void;
 }) {
   const content = portfolioContent[lang].navbar;
+  const resume = portfolioContent[lang].resume;
   const nextLanguage = lang === 'pt-BR' ? 'en-US' : 'pt-BR';
 
   return (
@@ -43,6 +45,12 @@ export function Navbar({
           size="md"
           icon={Download}
           className="cv-download-button"
+          onClick={() => {
+            void downloadResume(resume, lang).catch((error: unknown) => {
+              const detail = error instanceof Error ? error.message : String(error);
+              window.alert(`${content.downloadCv}: ${detail}`);
+            });
+          }}
         >
           {content.downloadCv}
         </Button>

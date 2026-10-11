@@ -1,0 +1,234 @@
+{
+  "pageTitle": "Vinicius Stumpf | Portfólio",
+  "navbar": {
+    "links": [
+      { "label": "Início", "href": "#home" },
+      { "label": "Sobre", "href": "#about" },
+      { "label": "Experiência", "href": "#experience" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Projetos", "href": "#projects" },
+      { "label": "Contato", "href": "#contact" }
+    ],
+    "downloadCv": "Baixar CV",
+    "languageSwitch": {
+      "portuguese": "PT-BR",
+      "english": "EN",
+      "ariaLabel": "Mudar idioma para inglês"
+    }
+  },
+  "hero": {
+    "subtitle": "- Olá, eu sou",
+    "name": "Vinicius Stumpf",
+    "role": "Desenvolvedor Back-end .NET",
+    "description": "Desenvolvedor back-end com 5 anos de experiência no ecossistema .NET, atuando na evolução de sistemas de Recursos Humanos, desenvolvimento de APIs e manutenção de aplicações legadas. Experiência na implementação de novas funcionalidades e suporte técnico à equipe.",
+    "buttons": {
+      "projects": "Ver Projetos",
+      "contact": "Entrar em Contato"
+    },
+    "socialLinks": {
+      "github": "Perfil de Vinicius no GitHub",
+      "linkedin": "Perfil de Vinicius no LinkedIn",
+      "whatsapp": "Entrar em contato pelo WhatsApp"
+    }
+  },
+  "about": {
+    "title": "Sobre mim",
+    "profileAlt": "Foto de perfil de Vinicius Stumpf",
+    "description": "Desenvolvedor back-end com 5 anos de experiência em .NET e C#, atuando no desenvolvimento e na manutenção de sistemas corporativos. Experiência na construção de APIs, integração com bancos de dados relacionais, manutenção de aplicações legadas e implementação de novas funcionalidades. Como suplente de tech lead, também contribuo com decisões técnicas e com a organização das atividades da equipe. Tenho interesse em aprofundar meus conhecimentos em sistemas embarcados e programação de baixo nível.",
+    "cards": [
+      {
+        "title": "Formação",
+        "description": "Ciência da Computação\nEstácio"
+      },
+      {
+        "title": "Experiência",
+        "description": "5 anos\nDesenvolvendo soluções"
+      },
+      {
+        "title": "Localização",
+        "description": "Santa Catarina, Brasil\nDisponível para mudança"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiência",
+    "description": "Minha trajetória profissional em desenvolvimento de software",
+    "jobs": [
+      {
+        "id": 1,
+        "position": "Desenvolvedor Back-end",
+        "company": "Havan | Havan RH",
+        "period": "2021 - Atual",
+        "description": "Desenvolvimento e manutenção de sistemas de Recursos Humanos, incluindo Gestão de Escalas, usando .NET e C#. Implementação de novas funcionalidades, manutenção evolutiva, correção de bugs e suporte a sistemas legados. Como suplente de tech lead, apoio decisões técnicas e o acompanhamento das demandas.",
+        "technologies": [".NET", "C#", "ASP.NET Core", "Entity Framework Core", "SQL Server", "PostgreSQL", "React"]
+      }
+    ]
+  },
+  "projects": {
+    "titlePrefix": "Projetos",
+    "titleAccent": "GitHub",
+    "description": "Uma seleção de projetos pessoais e experimentos com diferentes tecnologias.",
+    "filtersLabel": "Filtrar projetos por tecnologia",
+    "filters": [
+      { "id": "all", "label": "Todos" },
+      { "id": "dotnet", "label": ".NET" },
+      { "id": "web", "label": "Web" },
+      { "id": "desktop", "label": "Desktop" },
+      { "id": "tools", "label": "Ferramentas" }
+    ],
+    "technologiesLabel": "Tecnologias utilizadas",
+    "detailsLabel": "Sobre o projeto",
+    "repositoryLabel": "Ver no GitHub",
+    "openProjectLabel": "Abrir projeto no GitHub",
+    "closeModalLabel": "Fechar detalhes do projeto",
+    "items": [
+      {
+        "id": "geracao-boletos",
+        "preview": "api",
+        "previewTitle": "Boleto",
+        "filters": ["dotnet", "web", "tools"],
+        "category": "API",
+        "title": "API de geração de boletos",
+        "description": "API REST para geração de boletos, desenvolvida com ASP.NET Core. O projeto explora design de APIs, injeção de dependência e implantação em containers com Docker.",
+        "details": [
+          "API organizada em controllers para expor as operações de geração de boletos.",
+          "Estrutura em camadas com separação entre endpoints, modelos e repositórios.",
+          "Configuração Docker para empacotar e executar a aplicação em container."
+        ],
+        "technologies": ["C#", "ASP.NET Core", ".NET 6", "Docker"],
+        "repository": "https://github.com/vinicius-vs/Trabalho-De-Engenharia-de-Software-Arquitetura-Servless"
+      },
+      {
+        "id": "portfolio",
+        "preview": "web",
+        "filters": ["web", "tools"],
+        "category": "Web",
+        "title": "Portfólio de desenvolvedor",
+        "description": "Portfólio pessoal criado para apresentar minha experiência profissional, projetos e conhecimentos técnicos. Desenvolvido em React com conteúdo multilíngue.",
+        "details": [
+          "Interface construída com React e TypeScript, com estilos responsivos em CSS.",
+          "Conteúdo em português e inglês, com troca de idioma durante a navegação.",
+          "Seções para apresentar experiência, projetos e informações profissionais."
+        ],
+        "technologies": ["React", "TypeScript", "Vite"],
+        "repository": "https://github.com/vinicius-vs/Portifolio_page"
+      }
+    ]
+  },
+  "skills": {
+    "eyebrow": "Conhecimentos",
+    "titlePrefix": "Skills &",
+    "titleAccent": "Tecnologias",
+    "description": "Ferramentas e tecnologias que uso para criar aplicações e resolver problemas.",
+    "featuredLabel": "Foco principal",
+    "featuredDescription": "Desenvolvimento de back-end e construção de APIs.",
+    "categories": [
+      {
+        "id": "backend",
+        "title": "Back-end",
+        "items": ["C#", ".NET", "ASP.NET Core", "Entity Framework Core", "APIs REST"]
+      },
+      {
+        "id": "frontend",
+        "title": "Front-end",
+        "items": ["React", "TypeScript", "JavaScript", "HTML", "CSS"]
+      },
+      {
+        "id": "databases",
+        "title": "Bancos de dados",
+        "items": ["SQL Server", "PostgreSQL", "SQL"]
+      },
+      {
+        "id": "architecture",
+        "title": "Arquitetura e práticas",
+        "items": ["Clean Architecture", "DDD", "Desenvolvimento orientado a especificações"]
+      },
+      {
+        "id": "tools",
+        "title": "Ferramentas e tecnologias adicionais",
+        "items": ["Git", "Docker", "Java (contato profissional)", "Python (contato profissional)"]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contato",
+    "titlePrefix": "Vamos conversar?",
+    "titleAccent": "Estou à disposição.",
+    "description": "Estou aberto a novas oportunidades, colaborações e conversas sobre tecnologia. Escolha o canal que preferir.",
+    "links": [
+      {
+        "id": "email",
+        "label": "E-mail",
+        "value": "vinicius.stumpf000@gmail.com",
+        "href": "mailto:vinicius.stumpf000@gmail.com",
+        "ariaLabel": "Enviar e-mail para Vinicius"
+      },
+      {
+        "id": "whatsapp",
+        "label": "WhatsApp",
+        "value": "Vamos conversar diretamente",
+        "href": "https://wa.me/5547997199275",
+        "ariaLabel": "Entrar em contato com Vinicius pelo WhatsApp"
+      },
+      {
+        "id": "linkedin",
+        "label": "LinkedIn",
+        "value": "Conecte-se comigo profissionalmente",
+        "href": "https://www.linkedin.com/in/vinicius-stumpf-b91a661ab/",
+        "ariaLabel": "Conectar-se com Vinicius no LinkedIn"
+      },
+      {
+        "id": "github",
+        "label": "GitHub",
+        "value": "Veja meus projetos e código",
+        "href": "https://github.com/vinicius-vs",
+        "ariaLabel": "Ver o perfil de Vinicius no GitHub"
+      }
+    ]
+  },
+  "resume": {
+    "fileName": "Vinicius-Stumpf-Curriculo",
+    "role": "Desenvolvedor back-end | .NET e C#",
+    "location": "Brasil",
+    "languagesHeading": "Idiomas",
+    "languages": [
+      { "name": "Português", "level": "Nativo" },
+      { "name": "Inglês", "level": "Em desenvolvimento" }
+    ],
+    "summary": "Desenvolvedor back-end com 5 anos de experiência, principalmente com .NET, C# e ASP.NET Core. Experiência no desenvolvimento e manutenção de APIs e sistemas legados, além da criação de soluções para a área de Recursos Humanos. Atuação como suplente de tech lead.",
+    "experienceHeading": "Experiência profissional",
+    "company": "Havan | Havan RH",
+    "experienceRole": "Desenvolvedor back-end",
+    "period": "2021 - atual",
+    "experienceDetails": [
+      "Desenvolvimento e manutenção de sistemas de Recursos Humanos, incluindo Gestão de Escalas.",
+      "Implementação de novas funcionalidades, manutenção evolutiva e correção de bugs.",
+      "Desenvolvimento e manutenção de APIs e suporte a sistemas legados.",
+      "Atuação como suplente de tech lead."
+    ],
+    "experienceTechnologies": "Tecnologias: .NET, C#, ASP.NET Core, Entity Framework Core, APIs REST, SQL Server e PostgreSQL.",
+    "educationHeading": "Formação acadêmica",
+    "degree": "Ciência da Computação",
+    "institution": "Estácio",
+    "graduation": "Concluída no início de 2025",
+    "skillsHeading": "Competências técnicas",
+    "skills": [
+      {
+        "title": "Back-end",
+        "items": [".NET", "C#", "ASP.NET Core", "Entity Framework Core", "APIs REST"]
+      },
+      {
+        "title": "Banco de dados",
+        "items": ["SQL Server", "PostgreSQL"]
+      },
+      {
+        "title": "Arquitetura e práticas",
+        "items": ["Clean Architecture", "DDD", "Desenvolvimento orientado a especificações", "Sistemas legados"]
+      },
+      {
+        "title": "Outras tecnologias",
+        "items": ["React", "Java e Python (contato profissional)"]
+      }
+    ]
+  }
+}

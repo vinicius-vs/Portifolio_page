@@ -1,4 +1,4 @@
-import { Code2, Database, PanelsTopLeft, Wrench, type LucideIcon } from "lucide-react";
+import { Code2, Database, Layers3, PanelsTopLeft, Wrench, type LucideIcon } from "lucide-react";
 import "../../styles/skills.css";
 import type { portfolioContent } from "../../content";
 
@@ -8,6 +8,7 @@ const categoryIcons: Record<string, LucideIcon> = {
   backend: Code2,
   frontend: PanelsTopLeft,
   databases: Database,
+  architecture: Layers3,
   tools: Wrench,
 } as const;
 

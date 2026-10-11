@@ -9,4 +9,4 @@ Use these documents when working on the project:
 - `sections.md` — portfolio sections and content ownership
 - `project-guidelines.md` — scope and development standards
 
-Portfolio text and experience data are defined locally in `my-portifolio-front/src/content/`. Keep the implementation and documentation aligned; do not introduce backend or API assumptions.
+Portfolio text and experience data are defined locally in `portfolio-frontend/src/content/`. Keep the implementation and documentation aligned; do not introduce backend or API assumptions.

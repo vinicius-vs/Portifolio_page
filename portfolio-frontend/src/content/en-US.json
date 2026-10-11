@@ -1,0 +1,234 @@
+{
+  "pageTitle": "Vinicius Stumpf | Portfolio",
+  "navbar": {
+    "links": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "downloadCv": "Download CV",
+    "languageSwitch": {
+      "portuguese": "PT-BR",
+      "english": "EN",
+      "ariaLabel": "Switch language to Portuguese"
+    }
+  },
+  "hero": {
+    "subtitle": "- Hi, I am",
+    "name": "Vinicius Stumpf",
+    "role": "Back-end Developer | .NET and C#",
+    "description": "Back-end developer with 5 years of experience in the .NET ecosystem, contributing to the evolution of Human Resources systems, API development, and maintenance of legacy applications. Experienced in implementing new features and providing technical support to the team.",
+    "buttons": {
+      "projects": "View Projects",
+      "contact": "Contact Me"
+    },
+    "socialLinks": {
+      "github": "Vinicius's GitHub profile",
+      "linkedin": "Vinicius's LinkedIn profile",
+      "whatsapp": "Contact via WhatsApp"
+    }
+  },
+  "about": {
+    "title": "About me",
+    "profileAlt": "Profile photo of Vinicius Stumpf",
+    "description": "Back-end developer with 5 years of experience in .NET and C#, developing and maintaining enterprise systems. Experienced in building APIs, integrating with relational databases, maintaining legacy applications, and implementing new features. As an acting Tech Lead, I also contribute to technical decisions and team activity coordination. I am interested in deepening my knowledge of embedded systems and low-level programming.",
+    "cards": [
+      {
+        "title": "Education",
+        "description": "Computer Science\nEstácio"
+      },
+      {
+        "title": "Experience",
+        "description": "5 years\nBuilding solutions"
+      },
+      {
+        "title": "Location",
+        "description": "Santa Catarina, Brazil\nOpen to relocation"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "My professional journey in software development",
+    "jobs": [
+      {
+        "id": 1,
+        "position": "Back-end Developer",
+        "company": "Havan | Havan RH",
+        "period": "2021 - Present",
+        "description": "Develops and maintains Human Resources systems, including workforce scheduling management, using .NET and C#. Implements new features, performs system enhancements, fixes bugs, and supports legacy systems. As an acting Tech Lead, supports technical decisions and task coordination.",
+        "technologies": [".NET", "C#", "ASP.NET Core", "Entity Framework Core", "SQL Server", "PostgreSQL", "React"]
+      }
+    ]
+  },
+  "projects": {
+    "titlePrefix": "GitHub",
+    "titleAccent": "Projects",
+    "description": "A selection of personal projects and experiments with different technologies.",
+    "filtersLabel": "Filter projects by technology",
+    "filters": [
+      { "id": "all", "label": "All" },
+      { "id": "dotnet", "label": ".NET" },
+      { "id": "web", "label": "Web" },
+      { "id": "desktop", "label": "Desktop" },
+      { "id": "tools", "label": "Tools" }
+    ],
+    "technologiesLabel": "Technologies used",
+    "detailsLabel": "About this project",
+    "repositoryLabel": "View on GitHub",
+    "openProjectLabel": "Open project on GitHub",
+    "closeModalLabel": "Close project details",
+    "items": [
+      {
+        "id": "geracao-boletos",
+        "preview": "api",
+        "previewTitle": "Boleto",
+        "filters": ["dotnet", "web", "tools"],
+        "category": "API",
+        "title": "Payment slip generation API",
+        "description": "A REST API for generating Brazilian payment slips (boletos), built with ASP.NET Core. The project explores API design, dependency injection, and containerized deployment using Docker.",
+        "details": [
+          "Controller-based API exposing payment slip generation operations.",
+          "Layered structure separating endpoints, models, and repositories.",
+          "Docker configuration for packaging and running the application in a container."
+        ],
+        "technologies": ["C#", "ASP.NET Core", ".NET 6", "Docker"],
+        "repository": "https://github.com/vinicius-vs/Trabalho-De-Engenharia-de-Software-Arquitetura-Servless"
+      },
+      {
+        "id": "portfolio",
+        "preview": "web",
+        "filters": ["web", "tools"],
+        "category": "Web",
+        "title": "Developer portfolio",
+        "description": "A personal portfolio built to showcase my professional experience, projects, and technical background. Developed with React and multilingual content.",
+        "details": [
+          "Interface built with React and TypeScript, with responsive CSS styling.",
+          "Portuguese and English content, with language switching during navigation.",
+          "Sections showcasing professional experience, projects, and background."
+        ],
+        "technologies": ["React", "TypeScript", "Vite"],
+        "repository": "https://github.com/vinicius-vs/Portifolio_page"
+      }
+    ]
+  },
+  "skills": {
+    "eyebrow": "Expertise",
+    "titlePrefix": "Skills &",
+    "titleAccent": "Technologies",
+    "description": "Tools and technologies I use to build applications and solve problems.",
+    "featuredLabel": "Main focus",
+    "featuredDescription": "Back-end development and API engineering.",
+    "categories": [
+      {
+        "id": "backend",
+        "title": "Back-end",
+        "items": ["C#", ".NET", "ASP.NET Core", "Entity Framework Core", "REST APIs"]
+      },
+      {
+        "id": "frontend",
+        "title": "Front-end",
+        "items": ["React", "TypeScript", "JavaScript", "HTML", "CSS"]
+      },
+      {
+        "id": "databases",
+        "title": "Databases",
+        "items": ["SQL Server", "PostgreSQL", "SQL"]
+      },
+      {
+        "id": "architecture",
+        "title": "Architecture and practices",
+        "items": ["Clean Architecture", "DDD", "Specification-driven development"]
+      },
+      {
+        "id": "tools",
+        "title": "Tools and additional technologies",
+        "items": ["Git", "Docker", "Java (professional exposure)", "Python (professional exposure)"]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "titlePrefix": "Let's talk.",
+    "titleAccent": "I'm available.",
+    "description": "I'm open to new opportunities, collaborations, and conversations about technology. Choose the channel that works best for you.",
+    "links": [
+      {
+        "id": "email",
+        "label": "Email",
+        "value": "vinicius.stumpf000@gmail.com",
+        "href": "mailto:vinicius.stumpf000@gmail.com",
+        "ariaLabel": "Email Vinicius"
+      },
+      {
+        "id": "whatsapp",
+        "label": "WhatsApp",
+        "value": "Let's talk directly",
+        "href": "https://wa.me/5547997199275",
+        "ariaLabel": "Contact Vinicius on WhatsApp"
+      },
+      {
+        "id": "linkedin",
+        "label": "LinkedIn",
+        "value": "Connect with me professionally",
+        "href": "https://www.linkedin.com/in/vinicius-stumpf-b91a661ab/",
+        "ariaLabel": "Connect with Vinicius on LinkedIn"
+      },
+      {
+        "id": "github",
+        "label": "GitHub",
+        "value": "Explore my projects and code",
+        "href": "https://github.com/vinicius-vs",
+        "ariaLabel": "View Vinicius's GitHub profile"
+      }
+    ]
+  },
+  "resume": {
+    "fileName": "Vinicius-Stumpf-Resume",
+    "role": "Back-end Developer | .NET and C#",
+    "location": "Brazil",
+    "languagesHeading": "Languages",
+    "languages": [
+      { "name": "Portuguese", "level": "Native" },
+      { "name": "English", "level": "In progress" }
+    ],
+    "summary": "Back-end developer with 5 years of experience, primarily with .NET, C#, and ASP.NET Core. Experienced in developing and maintaining APIs and legacy systems, as well as building solutions for the Human Resources domain. Has served as an acting Tech Lead.",
+    "experienceHeading": "Professional experience",
+    "company": "Havan | Havan RH",
+    "experienceRole": "Back-end Developer",
+    "period": "2021 - Present",
+    "experienceDetails": [
+      "Develops and maintains Human Resources systems, including workforce scheduling management.",
+      "Implements new features, performs system enhancements, and fixes bugs.",
+      "Develops and maintains APIs and supports legacy systems.",
+      "Serves as an acting Tech Lead."
+    ],
+    "experienceTechnologies": "Technologies: .NET, C#, ASP.NET Core, Entity Framework Core, REST APIs, SQL Server, and PostgreSQL.",
+    "educationHeading": "Education",
+    "degree": "Computer Science",
+    "institution": "Estácio",
+    "graduation": "Completed in early 2025",
+    "skillsHeading": "Technical skills",
+    "skills": [
+      {
+        "title": "Back-end",
+        "items": [".NET", "C#", "ASP.NET Core", "Entity Framework Core", "REST APIs"]
+      },
+      {
+        "title": "Databases",
+        "items": ["SQL Server", "PostgreSQL"]
+      },
+      {
+        "title": "Architecture and practices",
+        "items": ["Clean Architecture", "DDD", "Specification-driven development", "Legacy systems"]
+      },
+      {
+        "title": "Other technologies",
+        "items": ["React", "Java and Python (professional exposure)"]
+      }
+    ]
+  }
+}
