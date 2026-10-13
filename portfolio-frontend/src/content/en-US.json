@@ -20,7 +20,7 @@
     "subtitle": "- Hi, I am",
     "name": "Vinicius Stumpf",
     "role": "Back-end Developer | .NET and C#",
-    "description": "I work on the development and evolution of enterprise systems, working with APIs, integrations, and legacy code. I focus on understanding problems, finding well-structured solutions, and building software that can evolve over time.",
+    "description": "Backend developer focused on .NET and C#, working on the development and evolution of enterprise systems. I enjoy understanding problems, evaluating solutions, and writing code that can be maintained and improved over time.",
     "buttons": {
       "projects": "View Projects",
       "contact": "Contact Me"
@@ -34,7 +34,7 @@
   "about": {
     "title": "About me",
     "profileAlt": "Profile photo of Vinicius Stumpf",
-    "description": "Back-end developer with 5 years of experience in .NET and C#, developing and maintaining enterprise systems. Experienced in building APIs, integrating with relational databases, maintaining legacy applications, and implementing new features. As an acting Tech Lead, I also contribute to technical decisions and team activity coordination. I am interested in deepening my knowledge of embedded systems and low-level programming.",
+    "description": "I'm a backend developer with 5 years of professional experience, primarily working with .NET and C#. My work includes developing and maintaining APIs, integrating relational databases, and improving existing systems. As an acting tech lead substitute, I also contribute to technical decisions and help coordinate the team's activities. Outside my current role, I'm interested in low-level programming and embedded systems, areas in which I'm looking to deepen my knowledge.",
     "cards": [
       {
         "title": "Education",
@@ -56,10 +56,10 @@
     "jobs": [
       {
         "id": 1,
-        "position": "Back-end Developer",
-        "company": "Havan | Havan RH",
-        "period": "2021 - Present",
-        "description": "Develops and maintains Human Resources systems, including workforce scheduling management, using .NET and C#. Implements new features, performs system enhancements, fixes bugs, and supports legacy systems. As an acting Tech Lead, supports technical decisions and task coordination.",
+        "position": "Back-end .NET Developer",
+        "company": "Havan",
+        "period": "Jul/2021 - Present",
+        "description": "Develop and maintain corporate HR systems with .NET and C#. Implement features and APIs, integrate systems, investigate and fix bugs, and enhance and support existing and legacy applications. As an acting Tech Lead substitute, contribute to technical decisions and team task tracking.",
         "technologies": [".NET", "C#", "ASP.NET Core", "Entity Framework Core", "SQL Server", "PostgreSQL", "React"]
       }
     ]
@@ -142,8 +142,8 @@
       {
         "id": "email",
         "label": "Email",
-        "value": "vinicius.stumpf000@gmail.com",
-        "href": "mailto:vinicius.stumpf000@gmail.com",
+        "value": "viniciusstumpf000@gmail.com",
+        "href": "mailto:viniciusstumpf000@gmail.com",
         "ariaLabel": "Email Vinicius"
       },
       {
@@ -171,29 +171,42 @@
   },
   "resume": {
     "fileName": "Vinicius-Stumpf-Resume",
-    "role": "Back-end Developer | .NET and C#",
+    "email": "viniciusstumpf000@gmail.com",
+    "phone": "+55 47 997199275",
+    "role": "Back-end .NET Developer",
     "location": "Brazil",
     "languagesHeading": "Languages",
     "languages": [
       { "name": "Portuguese", "level": "Native" },
       { "name": "English", "level": "In progress" }
     ],
-    "summary": "Back-end developer with 5 years of experience, primarily with .NET, C#, and ASP.NET Core. Experienced in developing and maintaining APIs and legacy systems, as well as building solutions for the Human Resources domain. Has served as an acting Tech Lead.",
+    "summary": "Back-end developer with 5 years of experience, primarily working with .NET and C#. Experienced in developing, maintaining, and evolving software systems, including both new applications and legacy systems. Worked on Human Resources systems, contributing to everything from implementing new features to fixing bugs, improving, and maintaining existing applications. Also serves as an acting Tech Lead substitute, supporting technical decisions, tracking tasks, and guiding the team when needed. Additional experience with React, Java, and Python, as well as relational databases and software architecture practices.",
     "experienceHeading": "Professional experience",
-    "company": "Havan | Havan RH",
-    "experienceRole": "Back-end Developer",
-    "period": "2021 - Present",
-    "experienceDetails": [
-      "Develops and maintains Human Resources systems, including workforce scheduling management.",
-      "Implements new features, performs system enhancements, and fixes bugs.",
-      "Develops and maintains APIs and supports legacy systems.",
-      "Serves as an acting Tech Lead."
+    "company": "Havan",
+    "experienceRole": "Back-end .NET Developer",
+    "period": "Jul/2021 - Present",
+    "relevantProjectHeading": "Relevant project",
+    "relevantProjectTitle": "Sales Associate and Cashier Scheduling Management System",
+    "relevantProjectDescription": "Developed an application for creating, editing, and viewing work schedules for sales associates and cashiers. The system allows managers to assign employees to checkout lanes and departments, adjust shifts and breaks, track accrued hour and day balances to plan days off, and review scheduled absences such as vacations, leaves, and recurring days off. It also provides a view of employee distribution by department and allows staff to check their weekly schedules, helping them plan their work routines.",
+    "responsibilitiesHeading": "Responsibilities",
+    "responsibilities": [
+      "Develops APIs and applications using .NET and C#.",
+      "Implements new features and solutions for Human Resources systems.",
+      "Maintains and evolves existing and legacy systems.",
+      "Investigates and fixes bugs.",
+      "Integrates systems and services.",
+      "Works with SQL Server and PostgreSQL databases.",
+      "Applies Clean Architecture and DDD concepts.",
+      "Contributes to defining and implementing technical solutions.",
+      "Acts as Tech Lead substitute, supporting the team with technical decisions and task tracking.",
+      "Works with React on front-end feature development and maintenance.",
+      "Uses Java and Python as required by project needs."
     ],
-    "experienceTechnologies": "Technologies: .NET, C#, ASP.NET Core, Entity Framework Core, REST APIs, SQL Server, and PostgreSQL.",
+    "experienceTechnologies": "Technologies: .NET, C#, ASP.NET Core, REST APIs, Entity Framework Core, React, Java, Python, SQL Server, and PostgreSQL.",
     "educationHeading": "Education",
     "degree": "Computer Science",
     "institution": "Estácio",
-    "graduation": "Completed in early 2025",
+    "graduation": "Graduated: 2025",
     "skillsHeading": "Technical skills",
     "skills": [
       {
@@ -201,17 +214,27 @@
         "items": [".NET", "C#", "ASP.NET Core", "Entity Framework Core", "REST APIs"]
       },
       {
+        "title": "Front-end",
+        "items": ["React", "JavaScript", "TypeScript"]
+      },
+      {
         "title": "Databases",
         "items": ["SQL Server", "PostgreSQL"]
       },
       {
-        "title": "Architecture and practices",
-        "items": ["Clean Architecture", "DDD", "Specification-driven development", "Legacy systems"]
+        "title": "Architecture and development",
+        "items": ["Clean Architecture", "Domain-Driven Design (DDD)", "Legacy system development and maintenance", "System integration", "API testing and maintenance"]
       },
       {
         "title": "Other technologies",
-        "items": ["React", "Java and Python (professional exposure)"]
+        "items": ["Java", "Python", "Git", "Docker"]
       }
+    ],
+    "additionalInformationHeading": "Additional information",
+    "additionalInformation": [
+      "Available for remote or on-site work.",
+      "Available for international relocation.",
+      "Interested in back-end development and software engineering opportunities."
     ]
   }
 }

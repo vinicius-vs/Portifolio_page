@@ -20,7 +20,7 @@
     "subtitle": "- Olá, eu sou",
     "name": "Vinicius Stumpf",
     "role": "Desenvolvedor Back-end .NET",
-    "description": "Atuo no desenvolvimento e na evolução de sistemas corporativos, trabalhando com APIs, integrações e código legado. Meu foco é entender os problemas, encontrar soluções bem estruturadas e construir software que possa evoluir com o tempo.",
+    "description": "Desenvolvedor back-end com foco em .NET e C#, atuando no desenvolvimento e na evolução de sistemas corporativos. Gosto de entender como os sistemas funcionam, resolver problemas técnicos e construir soluções que possam ser mantidas e evoluídas ao longo do tempo.",
     "buttons": {
       "projects": "Ver Projetos",
       "contact": "Entrar em Contato"
@@ -56,10 +56,10 @@
     "jobs": [
       {
         "id": 1,
-        "position": "Desenvolvedor Back-end",
-        "company": "Havan | Havan Labs",
-        "period": "2021 - Atual",
-        "description": "Desenvolvimento e evolução de sistemas de Recursos Humanos utilizando .NET e C#. Atuação na implementação de novas funcionalidades, correção de bugs e manutenção de sistemas legados. Como suplente de tech lead, apoio decisões técnicas, a organização das demandas e o acompanhamento das atividades da equipe.",
+        "position": "Desenvolvedor Back-end .NET",
+        "company": "Havan",
+        "period": "Jul/2021 - Atual",
+        "description": "Desenvolvimento e manutenção de sistemas corporativos de RH com .NET e C#. Implementação de funcionalidades e APIs, integração entre sistemas, investigação e correção de bugs e evolução e suporte a aplicações existentes e legadas. Como suplente de Tech Lead, contribuo com decisões técnicas e com o acompanhamento das demandas da equipe.",
         "technologies": [".NET", "C#", "ASP.NET Core", "Entity Framework Core", "SQL Server", "PostgreSQL", "React"]
       }
     ]
@@ -142,8 +142,8 @@
       {
         "id": "email",
         "label": "E-mail",
-        "value": "vinicius.stumpf000@gmail.com",
-        "href": "mailto:vinicius.stumpf000@gmail.com",
+        "value": "viniciusstumpf000@gmail.com",
+        "href": "mailto:viniciusstumpf000@gmail.com",
         "ariaLabel": "Enviar e-mail para Vinicius"
       },
       {
@@ -171,29 +171,42 @@
   },
   "resume": {
     "fileName": "Vinicius-Stumpf-Curriculo",
-    "role": "Desenvolvedor back-end | .NET e C#",
+    "email": "viniciusstumpf000@gmail.com",
+    "phone": "+55 47 997199275",
+    "role": "Desenvolvedor Back-end .NET",
     "location": "Brasil",
     "languagesHeading": "Idiomas",
     "languages": [
       { "name": "Português", "level": "Nativo" },
       { "name": "Inglês", "level": "Em desenvolvimento" }
     ],
-    "summary": "Desenvolvedor back-end com 5 anos de experiência, principalmente com .NET, C# e ASP.NET Core. Experiência no desenvolvimento e manutenção de APIs e sistemas legados, além da criação de soluções para a área de Recursos Humanos. Atuação como suplente de tech lead.",
+    "summary": "Desenvolvedor back-end com 5 anos de experiência, atuando principalmente com .NET e C#. Experiência no desenvolvimento, manutenção e evolução de sistemas, trabalhando tanto com aplicações novas quanto com sistemas legados. Atuação em sistemas para a área de Recursos Humanos, participando desde a implementação de novas funcionalidades até a correção de bugs, melhorias e manutenção de aplicações existentes. Também atuo como suplente de Tech Lead, apoiando decisões técnicas, acompanhamento das demandas e orientação do time quando necessário. Tenho experiência complementar com React, Java e Python, além de bancos de dados relacionais e práticas de arquitetura de software.",
     "experienceHeading": "Experiência profissional",
-    "company": "Havan | Havan RH",
-    "experienceRole": "Desenvolvedor back-end",
-    "period": "2021 - atual",
-    "experienceDetails": [
-      "Desenvolvimento e manutenção de sistemas de Recursos Humanos, incluindo Gestão de Escalas.",
-      "Implementação de novas funcionalidades, manutenção evolutiva e correção de bugs.",
-      "Desenvolvimento e manutenção de APIs e suporte a sistemas legados.",
-      "Atuação como suplente de tech lead."
+    "company": "Havan",
+    "experienceRole": "Desenvolvedor Back-end .NET",
+    "period": "Jul/2021 - Atual",
+    "relevantProjectHeading": "Projeto relevante",
+    "relevantProjectTitle": "Sistema de Gestão de Escalas de Vendedores e Caixas",
+    "relevantProjectDescription": "Desenvolvimento de uma aplicação para criação, edição e visualização de escalas de trabalho de vendedores e operadores de caixa. O sistema permite aos gestores alocar colaboradores entre caixas e setores, ajustar jornadas e intervalos, acompanhar saldos de banco de horas e dias para o planejamento de folgas e consultar ausências programadas, como férias, afastamentos e folgas fixas. Também oferece uma visão da distribuição de colaboradores por setor e disponibiliza aos funcionários a consulta de suas escalas semanais, facilitando o planejamento da rotina de trabalho.",
+    "responsibilitiesHeading": "Responsabilidades",
+    "responsibilities": [
+      "Desenvolvimento de APIs e aplicações utilizando .NET e C#.",
+      "Implementação de novas funcionalidades e soluções para sistemas de RH.",
+      "Manutenção e evolução de sistemas existentes e legados.",
+      "Investigação e correção de bugs.",
+      "Integração entre sistemas e serviços.",
+      "Trabalho com bancos de dados SQL Server e PostgreSQL.",
+      "Aplicação de conceitos de Clean Architecture e DDD.",
+      "Participação na definição e implementação de soluções técnicas.",
+      "Atuação como suplente de Tech Lead, apoiando o time em decisões técnicas e acompanhamento das demandas.",
+      "Contato com React no desenvolvimento e manutenção de funcionalidades de front-end.",
+      "Contato com Java e Python conforme as necessidades dos projetos."
     ],
-    "experienceTechnologies": "Tecnologias: .NET, C#, ASP.NET Core, Entity Framework Core, APIs REST, SQL Server e PostgreSQL.",
+    "experienceTechnologies": "Tecnologias: .NET, C#, ASP.NET Core, APIs REST, Entity Framework Core, React, Java, Python, SQL Server e PostgreSQL.",
     "educationHeading": "Formação acadêmica",
     "degree": "Ciência da Computação",
     "institution": "Estácio",
-    "graduation": "Concluída no início de 2025",
+    "graduation": "Conclusão: 2025",
     "skillsHeading": "Competências técnicas",
     "skills": [
       {
@@ -201,17 +214,27 @@
         "items": [".NET", "C#", "ASP.NET Core", "Entity Framework Core", "APIs REST"]
       },
       {
+        "title": "Front-end",
+        "items": ["React", "JavaScript", "TypeScript"]
+      },
+      {
         "title": "Banco de dados",
         "items": ["SQL Server", "PostgreSQL"]
       },
       {
-        "title": "Arquitetura e práticas",
-        "items": ["Clean Architecture", "DDD", "Desenvolvimento orientado a especificações", "Sistemas legados"]
+        "title": "Arquitetura e desenvolvimento",
+        "items": ["Clean Architecture", "Domain-Driven Design (DDD)", "Desenvolvimento e manutenção de sistemas legados", "Integração entre sistemas", "Testes e manutenção de APIs"]
       },
       {
         "title": "Outras tecnologias",
-        "items": ["React", "Java e Python (contato profissional)"]
+        "items": ["Java", "Python", "Git", "Docker"]
       }
+    ],
+    "additionalInformationHeading": "Informações adicionais",
+    "additionalInformation": [
+      "Disponibilidade para trabalho remoto ou presencial.",
+      "Disponibilidade para relocação internacional.",
+      "Interesse em oportunidades de desenvolvimento back-end e engenharia de software."
     ]
   }
 }

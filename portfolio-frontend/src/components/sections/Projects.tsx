@@ -132,8 +132,15 @@ export function Projects({ content }: { content: ProjectsContent }) {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const modalRef = useRef<HTMLDialogElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
+  const usedFilterIds = new Set(content.items.flatMap((project) => project.filters));
+  const availableFilters = content.filters.filter(
+    (filter) => filter.id === "all" || usedFilterIds.has(filter.id),
+  );
+  const selectedFilter = availableFilters.some((filter) => filter.id === activeFilter)
+    ? activeFilter
+    : "all";
   const visibleProjects = content.items.filter(
-    (project) => activeFilter === "all" || project.filters.includes(activeFilter),
+    (project) => selectedFilter === "all" || project.filters.includes(selectedFilter),
   );
 
   useEffect(() => {
@@ -162,12 +169,12 @@ export function Projects({ content }: { content: ProjectsContent }) {
         </header>
 
         <div className="projects-filters" aria-label={content.filtersLabel}>
-          {content.filters.map((filter) => (
+          {availableFilters.map((filter) => (
             <button
               type="button"
               key={filter.id}
-              className={`projects-filter${activeFilter === filter.id ? " is-active" : ""}`}
-              aria-pressed={activeFilter === filter.id}
+              className={`projects-filter${selectedFilter === filter.id ? " is-active" : ""}`}
+              aria-pressed={selectedFilter === filter.id}
               onClick={() => setActiveFilter(filter.id)}
             >
               {filter.label}

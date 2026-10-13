@@ -100,7 +100,7 @@ export async function createResumePdf(content: ResumeContent, language: Language
     addLinkLine(second.label, second.url, second.display, secondX, y);
   };
 
-  const getContactLink = (id: "email" | "linkedin" | "github" | "whatsapp") => {
+  const getContactLink = (id: "linkedin" | "github") => {
     const link = portfolioContent[language].contact.links.find((item) => item.id === id);
     if (!link) {
       throw new Error(`Missing resume contact link: ${id}`);
@@ -139,28 +139,31 @@ export async function createResumePdf(content: ResumeContent, language: Language
     33,
   );
 
-  const email = getContactLink("email");
   const linkedin = getContactLink("linkedin");
   const github = getContactLink("github");
-  const whatsapp = getContactLink("whatsapp");
   const displayUrl = (url: string) => url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
   const emailLink = {
-    label: email.label,
-    url: email.href,
-    display: email.value,
+    label: language === "pt-BR" ? "E-mail" : "Email",
+    url: `mailto:${content.email}`,
+    display: content.email,
+  };
+  const phoneLink = {
+    label: language === "pt-BR" ? "Telefone" : "Phone",
+    url: `tel:${content.phone.replace(/[^\d+]/g, "")}`,
+    display: content.phone,
   };
   const locationLink = {
     label: language === "pt-BR" ? "Localização" : "Location",
     url: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(content.location)}`,
     display: content.location,
   };
-  addLinkRow(emailLink, locationLink, 40);
+  addLinkRow(emailLink, phoneLink, 40);
   addLinkRow(
     { label: linkedin.label, url: linkedin.href, display: displayUrl(linkedin.href) },
     { label: github.label, url: github.href, display: displayUrl(github.href) },
     46,
   );
-  addLinkLine(whatsapp.label, whatsapp.href, displayUrl(whatsapp.href), margin, 52);
+  addLinkLine(locationLink.label, locationLink.url, locationLink.display, margin, 52);
   cursorY = headerTop + headerHeight + 8;
 
   addSectionHeading(
@@ -169,34 +172,28 @@ export async function createResumePdf(content: ResumeContent, language: Language
   );
   addParagraph(content.summary, { size: 10, color: ink });
 
-  const experienceHeight =
-    13 +
-    paragraphHeight(content.experienceRole, 10) +
-    paragraphHeight(content.company, 10) +
-    paragraphHeight(content.period, 9) +
-    content.experienceDetails.reduce(
-      (total, detail) => total + paragraphHeight(`- ${detail}`, 9.5, 4),
-      0,
-    ) +
-    paragraphHeight(content.experienceTechnologies, 9, 4);
-  const remainingPageHeight = pageHeight - margin - cursorY;
-  const keepExperienceTogether = experienceHeight <= remainingPageHeight;
+  const projectBlockHeight =
+    paragraphHeight(content.relevantProjectHeading, 10) +
+    paragraphHeight(content.relevantProjectTitle, 10) +
+    paragraphHeight(content.relevantProjectDescription, 9.5);
   const experienceStartHeight =
+    paragraphHeight(content.company, 11) +
+    paragraphHeight(content.period, 10) +
     paragraphHeight(content.experienceRole, 10) +
-    paragraphHeight(content.company, 9) +
-    paragraphHeight(`- ${content.experienceDetails[0] ?? ""}`, 9.5, 4);
-  addSectionHeading(
-    content.experienceHeading,
-    keepExperienceTogether ? experienceHeight : experienceStartHeight,
-  );
+    projectBlockHeight;
+  addSectionHeading(content.experienceHeading, experienceStartHeight);
   addParagraph(content.company, { bold: true, size: 11, color: ink });
   addParagraph(content.period, { bold: true, size: 10, color: green });
   addParagraph(content.experienceRole, { size: 10, color: muted });
-  for (const detail of content.experienceDetails) {
-    addParagraph(`- ${detail}`, { size: 10, indent: 4 });
+  addParagraph(content.relevantProjectHeading, { bold: true, size: 10, color: ink });
+  addParagraph(content.relevantProjectTitle, { bold: true, size: 9.5, color: muted });
+  addParagraph(content.relevantProjectDescription, { size: 9.5, color: ink });
+  addParagraph(content.responsibilitiesHeading, { bold: true, size: 10, color: ink });
+  for (const detail of content.responsibilities) {
+    addParagraph(`- ${detail}`, { size: 9.5, indent: 4 });
   }
   addParagraph(content.experienceTechnologies, {
-    size: 9.5,
+    size: 9,
     color: muted,
     indent: 4,
   });
@@ -227,6 +224,17 @@ export async function createResumePdf(content: ResumeContent, language: Language
     size: 10,
     color: ink,
   });
+
+  addSectionHeading(
+    content.additionalInformationHeading,
+    content.additionalInformation.reduce(
+      (total, detail) => total + paragraphHeight(`- ${detail}`, 9.5, 4),
+      0,
+    ),
+  );
+  for (const detail of content.additionalInformation) {
+    addParagraph(`- ${detail}`, { size: 9.5, indent: 4 });
+  }
 
   const pageCount = pdf.getNumberOfPages();
   if (pageCount > 1) {
